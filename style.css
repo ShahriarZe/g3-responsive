@@ -1,0 +1,316 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+
+header{
+    background-color: rgba(255, 144, 14, 0.10);;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-heading{
+    color:#131313; 
+    font-size: 45px;
+    font-weight: 700;
+}
+.nav-item{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-description{
+    text-align: center;
+    margin: 50px 500px 0 500px;
+}
+.description-heading{
+    color:#131313;
+    font-size: 64px;
+    font-weight: 700;
+}
+.description-paragraph{
+    color: #727272;
+    font-size: 18px;
+    font-weight: 400;
+}
+.button-1{
+    border-radius: 8px;
+    background-color: #FF900E;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    padding: 15px 20px;
+}
+
+.header-image img{
+    width: 100%;
+}
+.header-image{
+    width: 60%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Header Part Media Queries */
+
+@media screen and (max-width:576px) {
+    nav, .nav-item{
+        flex-direction: column;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-description{
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+    /* Main Section */
+
+    .team-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 40px;
+        width: 60%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    .team-heading{
+       color:#131313 ; 
+       font-size: 45px;
+       font-weight: 700;
+    }
+    .team-paragraph{
+      color: #727272;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .team-images img{
+        width: 300px;
+    }
+    .team-images {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 20px;
+    }
+    .features{
+        color: #FF900E;
+    }
+
+
+    /* Media Queries For Team Section */
+
+    @media screen  and (max-width:576px){   
+        .team-container{
+            flex-direction: column-reverse;
+        }
+        .team-images{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+
+
+    /* Feautes Section */
+
+    .features-section{
+        width: 70%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    .features-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .feature-box{
+        background-color: #FFF;
+        border-radius: 8px;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+        padding: 10px;
+
+        
+    }
+    .feature-box h4{
+        font-size: 20px;
+        color: #131313;
+        font-weight: 600;
+    }
+    .feature-box p{
+        font-size: 16px;
+        color:#727272;
+        font-weight: 400;
+    }
+
+    .feautes-image img{
+        width: 700px;
+    }
+    .experience{
+        width: 300px;
+        height: 140px;
+        background-color: #FF900E;
+        text-align: center;
+        margin-top: -100px;
+        margin-left:  600px; 
+        position: relative;
+        /* padding: 20px; */
+        
+    }
+    .experience h2{
+        color: #FFF;
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 0px;
+        padding-top: 20px;
+        
+    }
+    .experience p{
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 0px;
+      
+    }
+    .feaute-top-box h2{
+        font-size:40px ;
+        color: #131313;
+        font-weight: 700;
+        border-left: 4px solid #FF900E;
+        padding-left: 10px;
+    }
+    .feaute-top-box p{
+        font-size: 16px;
+        color: #727272;
+        font-weight: 400;
+    }
+
+    /* Media Queries For Features Section */
+    @media screen and (max-width:576px){
+        .features-container{
+            display: flex;
+            flex-direction: column;
+        }
+        .experience{
+            margin-left: 40px;
+            width: 200px;
+            height: 120px;
+            margin-top: -50px;
+        }
+        .features-container img{
+            width: 100%;
+        }
+        .Features-description{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    /* Facts Section */
+
+    .facts-container{
+        width: 70%;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .facts-description h2{
+        font-size: 45px;
+        color: #131313;
+        font-weight: 700;
+    }
+    .facts-description p{
+        font-size: 18px;
+        color: #727272;
+        font-weight: 400;
+    }
+
+    .facts-item{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+    .item-list{
+        border-radius: 8px;
+        border: 1px solid #FF900E;
+        padding: 30px;
+    }
+
+    @media screen and (max-width:576px) {
+        .facts-container{
+            display: flex;
+            flex-direction: column;
+        }
+        .facts-item{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 10px;
+        }
+    }
+
+    /* Sponsor Section */
+
+    .sponsor-container{
+        width: 70%;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .sponsor-description{
+        text-align: center;
+    }
+    .sponsor-description h2{
+        font-size: 45px;
+        color: #131313;
+        font-weight: 700;
+    }
+    .sponsor-description p{
+        font-size: 18px;
+        color: #727272;
+        font-weight: 400;
+    }
+    .sponsor-list{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+    @media screen and (max-width:576px){
+        .sponsor-container{
+            display: flex;
+            flex-direction: column;
+        }
+        .sponsor-list{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 40px;
+          width: 50%;
+          margin: auto;
+          margin-top: 30px;
+        }
+    }
+
+    /* Footer Section */
+    .footer{
+        text-align: center;
+        border-radius: 8px;
+        background-color: #FFF4E7;
+        padding: 5px;
+        width: 80%;
+        margin: auto;
+        margin-top: 100px;
+    }
